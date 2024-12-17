@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets</title>
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container"> 
+            <div class="logo">
+                <h1>Halim Kallel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li> 
+                    <li><a href="Parcours Académique.html">Parcours Académique</a></li>
+                    <li><a href="Competances.html">Compétences</a></li>
+                    <li><a href="ExpériencesPro.html">Stages</a></li>
+                    <li><a href="Projets.html" class="active">Projets</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects">
+            <div class="project-category">
+                <h2>Projets</h2>
+                <div class="projects-grid">
+                    <!-- Projet Universitaire 1 -->
+                    <div class="project-card">
+                        <div class="project-details">
+                            <h3>Gestion des rendez-vous</h3>
+                            <p>Application web de location de voitures.</p>
+                            <a href="#" 
+                               class="btn voir-plus" 
+                               data-title="Gestion des rendez-vous" 
+                               data-description="Ce projet a été réalisé pour développer une application de location de voiture, en utilisant Angular pour le frontend convivial et SpringBoot pour le backend robuste." 
+                               data-image="../images/Rendez-vous.png"
+                               data-link="https://github.com/rhapi-project/rhapi-rdv">
+                                Voir plus
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Projet Universitaire 2 -->
+                    <div class="project-card">
+                        <div class="project-details">
+                            <h3>Gestion de Stockage</h3>
+                            <p>Un projet avec C#.</p>
+                            <a href="#" 
+                               class="btn voir-plus" 
+                               data-title="Gestion de Stockage" 
+                               data-description="Ce projet consiste à développer un système de gestion de stockage de produits en C# pour un suivi et un contrôle efficaces des inventaires." 
+                               data-image="../images/Stock.png"
+                               data-link="https://github.com/LaravelDaily/Laravel-Asset-Stock-Management">
+                                Voir plus
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Projet Universitaire 3 -->
+                    <div class="project-card">
+                        <div class="project-details">
+                            <h3>Jeu vidéo 3D</h3>
+                            <p>Un projet avec Unity et C#.</p>
+                            <a href="#" 
+                               class="btn voir-plus" 
+                               data-title="Jeu vidéo 3D" 
+                               data-description="Ce projet consiste à développer un jeu vidéo 3D avec C# et Unity, mettant l'accent sur un gameplay immersif et des graphismes avancés." 
+                               data-image="../images/Space-game.jpeg"
+                               data-link="https://github.com/JohannesHoppe/SolarTournament">
+                                Voir plus
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Projet Universitaire 4 -->
+                    <div class="project-card">
+                        <div class="project-details">
+                            <h3>Application mobile</h3>
+                            <p>Développement avec Flutter et Dart.</p>
+                            <a href="#" 
+                               class="btn voir-plus" 
+                               data-title="Application mobile" 
+                               data-description="Ce projet consiste à développer une application mobile pour la gestion d'un app store en utilisant Flutter et Dart, créant une expérience utilisateur élégante et fonctionnelle." 
+                               data-image="../images/shop-app.jpg"
+                               data-link="https://github.com/iDmit9/rn-shop-app">
+                                Voir plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Fenêtre modale -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title">Titre du projet</h3>
+            <img id="modal-image" src="" alt="Image du projet" style="width: 100%; margin-bottom: 20px; margin-top: 10px;">
+            <p id="modal-description">Description détaillée du projet.</p>
+            <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" style="display: block; color: #0366d6; font-weight: bold; margin-top: 20px;">
+                Voir le projet sur GitHub
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Halim Kallel. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

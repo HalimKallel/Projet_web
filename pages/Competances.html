@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - H.K</title>
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Halim Kallel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li> 
+                    <li><a href="Parcours Académique.html">Parcours Académique</a></li>
+                    <li><a href="Competances.html" class="active">Compétences</a></li>
+                    <li><a href="ExpériencesPro.html">Stages</a></li>
+                    <li><a href="Projets.html">Projets</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="skills">
+            <h2>Mes Compétences Informatiques</h2>
+            <div class="filter-buttons">
+                <button onclick="filterSkills('all')">Toutes</button>
+                <button onclick="filterSkills('dev-environments')">Environnements</button>
+                <button onclick="filterSkills('frameworks')">Frameworks</button>
+                <button onclick="filterSkills('programming-languages')">Langages</button>
+                <button onclick="filterSkills('databases')">SGBD</button>
+                <button onclick="filterSkills('agile-methods')">Agile</button>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category dev-environments">
+                    <h3>Environnements de Développement</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Eclipse</li>
+                        <li>IntelliJ IDEA</li>
+                        <li>NetBeans</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category frameworks">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>Angular</li>
+                        <li>Spring Boot</li>
+                        <li>Flutter</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category programming-languages">
+                    <h3>Langages de Programmation</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>C</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category databases">
+                    <h3>Systèmes de Gestion de Bases de Données (SGBD)</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>SQLSERVER</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category agile-methods">
+                    <h3>Méthodes Agiles</h3>
+                    <ul>
+                        <li>Scrum</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Halim Kallel. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

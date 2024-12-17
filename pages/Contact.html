@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-moi</title>
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Halim Kallel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="Parcours Académique.html">Parcours Académique</a></li>
+                    <li><a href="Competances.html">Compétences</a></li>
+                    <li><a href="ExpériencesPro.html">Stages</a></li>
+                    <li><a href="Projets.html">Projets</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="Contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>Contactez-moi</h2>
+                <p>Vous avez des questions ou souhaitez collaborer ? Contactez-moi ci-dessous :</p>
+                <form class="contact-form" onsubmit="rediriger(event)">
+                    <div class="form-group">
+                        <label for="name">Votre nom</label>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Votre email</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" placeholder="Écrivez votre message ici" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Halim Kallel. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
